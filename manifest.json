@@ -1,0 +1,12 @@
+
+{
+  "name": "ShortVideo India",
+  "short_name": "ShortVideo",
+  "description": "Watch and share short videos with friends.",
+  "lang": "hi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#160d27",
+  "theme_color": "#160d27"
+}
