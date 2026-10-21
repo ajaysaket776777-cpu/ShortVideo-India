@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#160d27">
+<title>ShortVideo India</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#100b19;color:white;font-family:Arial,sans-serif}
+header{padding:18px;background:#21132f;color:#ff65c5;font-size:24px;font-weight:bold}
+nav{display:flex;justify-content:space-around;padding:15px 4px;background:#21132f;position:sticky;top:0}
+button{background:#a82df0;color:white;border:0;border-radius:20px;padding:10px 16px}
+main{padding:16px}
+.card{background:#261831;border-radius:18px;padding:18px;margin:16px 0}
+h2{margin-top:5px}
+p{color:#e0d5e8}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+a{color:#ff83cf}
+</style>
+</head>
+<body>
+<header>💜 ShortVideo India</header>
+<nav>
+<span>🏠 Home</span><span>🔍 Search</span><span>➕ Create</span><span>👤 Profile</span>
+</nav>
+<main>
+<div class="card">
+<h2>भारत का अपना वीडियो प्लेटफॉर्म 🇮🇳</h2>
+<p>देखें, बनाएँ और अपने वीडियो दोस्तों के साथ साझा करें।</p>
+<button onclick="alert('Welcome to ShortVideo India!')">शुरू करें</button>
+</div>
+<div class="card">
+<h2>🎬 वीडियो फीड</h2>
+<p>आपकी पसंद के छोटे वीडियो यहाँ दिखेंगे।</p>
+<div class="actions">
+<button onclick="like(this)">❤️ Like <span>0</span></button>
+<button onclick="alert('कमेंट सुविधा आगे जोड़ी जाएगी।')">💬 Comment</button>
+<button onclick="share()">↗ Share</button>
+</div>
+</div>
+<div class="card">
+<h2>💌 Messages & Calls</h2>
+<p>मैसेज और कॉल की सुविधा आगे सर्वर से जोड़ी जाएगी।</p>
+</div>
+<div class="card">
+<h2>⚙️ Settings & Activity</h2>
+<p>प्रोफाइल, सेटिंग और आपकी गतिविधियाँ।</p>
+<button onclick="alert('Settings जल्द उपलब्ध होंगी।')">Settings</button>
+</div>
+<div class="card">
+<h2>🔐 Login / Signup</h2>
+<p>अकाउंट बनाने की सुविधा अगले चरण में जोड़ी जाएगी।</p>
+<button onclick="alert('Login सुविधा अभी तैयार की जा रही है।')">Login / Signup</button>
+</div>
+</main>
+<script>
+function like(btn){let s=btn.querySelector('span');s.textContent=Number(s.textContent)+1}
+function share(){if(navigator.share){navigator.share({title:'ShortVideo India',url:location.href})}else{alert('ShortVideo India में आपका स्वागत है!')}}
+</script>
+</body>
+</html>
